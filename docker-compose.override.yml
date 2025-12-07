@@ -1,0 +1,9 @@
+services:
+  superset:
+    environment:
+      PYTHONPATH: /app/superset_home/.local/lib/python3.10/site-packages
+    command: >
+      /bin/bash -lc "/app/.venv/bin/superset db upgrade &&
+      (/app/.venv/bin/superset fab create-admin --username admin --firstname Sunho --lastname Lee --email admin@example.com --password admin123 || true) &&
+      /app/.venv/bin/superset init &&
+      /app/.venv/bin/gunicorn -w 2 -k gthread --threads 2 --timeout 120 -b 0.0.0.0:8088 'superset.app:create_app()'"
