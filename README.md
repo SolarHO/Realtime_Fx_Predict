@@ -100,8 +100,9 @@ Forecast 컨테이너는 여러 모델을 실행할 수 있도록 통합된 구�
 - 7일치
 
 **실행 스크립트**
-
+```
 ~/fx-stack/bin/forecast_all_horizons.sh
+```
 - 매일 09:07 자동 실행 (KST)
 - 각 모델 & horizon 조합을 모두 수행
 - 결과를 PostgreSQL & MinIO 에 저장
