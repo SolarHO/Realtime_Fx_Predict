@@ -55,7 +55,7 @@ EC2 인스턴스에 다음과 같은 **보안 그룹 인바운드 규칙**을 �
 - 예측 결과 CSV는 다음과 같은 키 구조로 저장됨:
   - `s3://fx-raw/YYYY/MM/DD/forecast_{PAIR}_{MODEL}.csv`
   - 예: `s3://fx-raw/2025/12/05/forecast_USDKRW_gruh7.csv`
-- 추후 **실제 AWS S3로 갈아탈 때 코드 수정 최소화**:
+- 추후 **실제 AWS S3로 이동 시시 코드 수정 최소화**:
   - MinIO → S3로 엔드포인트/크레덴셜만 바꿔도 동일한 방식으로 동작
 
 ### ⏱ 5. Cron + systemd 기반 스케줄링
