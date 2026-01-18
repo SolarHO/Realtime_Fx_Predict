@@ -1,12 +1,8 @@
-# --------------------------
-# 🔥 ENV & Secret Files
-# --------------------------
+# ENV & Secret Files
 .env
 *.env
 
-# --------------------------
-# 🔥 Docker Runtime Data
-# --------------------------
+# Docker Runtime Data
 postgres/
 minio/
 superset_home/
@@ -14,9 +10,7 @@ tmp/
 logs/
 *.log
 
-# --------------------------
-# 🔥 Forecast Outputs & Temporary Files
-# --------------------------
+# Forecast Outputs & Temporary Files
 *_forecast_h5
 *_h5
 *_h7
@@ -25,35 +19,25 @@ logs/
 forecast_image_src/output/
 forecast_multi/output/
 
-# --------------------------
-# 🔥 Python Cache
-# --------------------------
+# Python Cache
 __pycache__/
 *.pyc
 
-# --------------------------
-# 🔥 Jupyter Cache
-# --------------------------
+# Jupyter Cache
 .ipynb_checkpoints/
 
-# --------------------------
-# 🔥 ML Model Weights (너의 LSTM/GRU/DLinear 등)
-# --------------------------
+# ML Model Weights (LSTM/GRU/DLinear)
 *.pt
 *.pth
 *.onnx
 *.tflite
 *.safetensors
 
-# --------------------------
-# 🔥 OS / Editor Files
-# --------------------------
+# OS / Editor Files
 .DS_Store
 *.swp
 *.swo
 
-# --------------------------
-# 🔥 GitHub에 올릴 필요 없는 백업 파일
-# --------------------------
+# GitHub에 올릴 필요 없는 백업 파일
 *.bak.*
 *.old
