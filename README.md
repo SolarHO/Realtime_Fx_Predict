@@ -5,7 +5,10 @@
 매일 자동으로 USD/KRW 미래 환율(1일/5일/7일) 을 다양한 모델(DLinear, LSTM, GRU, ARIMA)로 예측하며,<br>
 MinIO에 결과를 저장하고 Superset에서 시각화하는 완전한 MLOps 파이프라인입니다.
 
-> 📌 **이 프로젝트는 기존 개인 실험용 프로젝트 [FX_predict](https://github.com/SolarHO/FX_predict)를 기반으로 확장된 실전형 버전입니다.**
+> **본 프로젝트는**
+> **[FX_predict](https://github.com/SolarHO/FX_predict)에서 수행한**
+> **USD/KRW 시계열 분석과 LSTM·GRU·DLinear 모델 비교 실험을 기반으로,**
+> **데이터 수집부터 예측·저장·시각화까지 자동화한 운영형 프로젝트입니다.**
 
 ---
 
